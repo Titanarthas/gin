@@ -394,7 +394,7 @@ walk: // Outer loop for walking the tree
 					tsr = path == "/" && n.handlers != nil
 
 					nLen := len(n.path)
-					if nLen > 0 && n.path[nLen - 1] == '/' {
+					if nLen > 0 && n.path[nLen - 1] == '/' && n.indices == "" {
 						tsr = true
 						handlers = n.handlers
 					}
