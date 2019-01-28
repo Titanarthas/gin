@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/gin-gonic/gin"
+	"github.com/Titanarthas/gin"
 )
 
 func main() {

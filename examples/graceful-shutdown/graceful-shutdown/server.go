@@ -10,7 +10,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/gin-gonic/gin"
+	"github.com/Titanarthas/gin"
 )
 
 func main() {

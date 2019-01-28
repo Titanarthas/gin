@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gin-gonic/gin"
+	"github.com/Titanarthas/gin"
 )
 
 func formatAsDate(t time.Time) string {
