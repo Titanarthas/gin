@@ -392,6 +392,13 @@ walk: // Outer loop for walking the tree
 					// We can recommend to redirect to the same URL without a
 					// trailing slash if a leaf exists for that path.
 					tsr = path == "/" && n.handlers != nil
+
+					nLen := len(n.path)
+					if nLen > 0 && n.path[nLen - 1] == '/' {
+						tsr = true
+						handlers = n.handlers
+					}
+
 					return
 				}
 
